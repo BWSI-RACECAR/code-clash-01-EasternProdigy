@@ -28,19 +28,12 @@ Input: “dad”        Output: False
 class Solution:
     # Write code below to complete prompt
     def isPalindrome(self, s):
-            mat = []
-            mat2 = []
             if len(s) > 6:
-                 for i in range(len(s) - 1):
-                      mat.append(s[(len(s) - 1) - i])
-                      mat.append(s[len(s) - 1])
-                 if mat2 == mat:
+                 fg = s [::1]
+                 if fg == s:
                       return True
             else:
                  return False
-            
-            #TODO: Write code below to return a boolean value with the solution to the prompt.
-            pass
 
 def main():
     tc1 = Solution()
